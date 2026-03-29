@@ -1,4 +1,3 @@
-def call(String repoUrl,STring branch) {
-    git url: "${repoUrl}",
-    branch: "${branch}"
+def call(String imageName) {
+    sh "docker build -t ${imageName} ."
 }
